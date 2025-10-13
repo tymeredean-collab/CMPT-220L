@@ -2,3 +2,51 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+
+// Problem 2
+        System.out.println("Problem 2");
+        System.out.println("Enter a number and I will tell you the factorial:");
+        int num = sc.nextInt();
+        System.out.println("The factorial is: " + factorial(num));
+
+        // Problem 3
+        System.out.println("\nProblem 3");
+        System.out.println("Enter a number and I will tell you the sum of every other number:");
+        int range = sc.nextInt();
+        System.out.println("The sum of every other number is: " + sumEveryOther(range));
+
+        // Problem 5
+        System.out.println("\nProblem 5");
+        System.out.println("Enter a word or phrase and I will print it in reverse:");
+        sc.nextLine(); // consume leftover newline
+        String text = sc.nextLine();
+        System.out.println("Reversed: " + reverseString(text));
+    }
+
+    // 🧮 Problem 2: Factorial method
+    public static int factorial(int n) {
+        int result = 1;
+        for (int i = 1; i <= n; i++) {
+            result *= i; // multiply result by each number up to n
+        }
+        return result;
+    }
+
+    // ➕ Problem 3: Sum of every other number (1, 3, 5, etc.)
+    public static int sumEveryOther(int limit) {
+        int sum = 0;
+        for (int i = 1; i <= limit; i += 2) { // start from 1, skip by 2
+            sum += i;
+        }
+        return sum;
+    }
+
+    // 🔁 Problem 5: Reverse a string
+    public static String reverseString(String text) {
+        String reverse = "";
+        for (int i = text.length() - 1; i >= 0; i--) {
+            reverse += text.charAt(i);
+        }
+        return reverse;
+    }
+}
