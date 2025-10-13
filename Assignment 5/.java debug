@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -23,7 +24,7 @@ public class Main {
         System.out.println("Reversed: " + reverseString(text));
     }
 
-    // 🧮 Problem 2: Factorial method
+    //  Problem 2: Factorial method
     public static int factorial(int n) {
         int result = 1;
         for (int i = 1; i <= n; i++) {
@@ -32,7 +33,7 @@ public class Main {
         return result;
     }
 
-    // ➕ Problem 3: Sum of every other number (1, 3, 5, etc.)
+    //  Problem 3: Sum of every other number (1, 3, 5, etc.)
     public static int sumEveryOther(int limit) {
         int sum = 0;
         for (int i = 1; i <= limit; i += 2) { // start from 1, skip by 2
@@ -41,7 +42,7 @@ public class Main {
         return sum;
     }
 
-    // 🔁 Problem 5: Reverse a string
+    //  Problem 5: Reverse a string
     public static String reverseString(String text) {
         String reverse = "";
         for (int i = text.length() - 1; i >= 0; i--) {
