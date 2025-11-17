@@ -42,5 +42,5 @@ public class Main {
     System.out.println(highGpaNames);
 }
 }
-
+// I learned how to read data from a text file in Java, store values using lists, and use conditional logic to filter and display only the names with GPAs above 3.5.
 
